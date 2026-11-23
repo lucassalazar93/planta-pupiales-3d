@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Maqueta 3D conceptual de una planta de lácteos de 500 L/día en Pupiales (Nariño): proceso, distribución y recorrido guiado. Presenta Industrias Equinox Colombia.">
+<meta property="og:title" content="Planta de lácteos de 500 L/día · Pupiales · Industrias Equinox Colombia">
+<meta property="og:description" content="Maqueta 3D del proceso y la distribución, con recorrido guiado. Diseñado y desarrollado por Lukbyte.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Industrias Equinox Colombia">
+<meta property="og:locale" content="es_CO">
+<meta property="og:url" content="https://planta-pupiales-3d.vercel.app/">
+<meta property="og:image" content="https://planta-pupiales-3d.vercel.app/assets/og.jpg?v=1">
+<meta property="og:image:secure_url" content="https://planta-pupiales-3d.vercel.app/assets/og.jpg?v=1">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo de Industrias Equinox Colombia sobre la maqueta 3D de la planta de lácteos de Pupiales">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Planta de lácteos de 500 L/día · Pupiales · Industrias Equinox Colombia">
+<meta name="twitter:description" content="Maqueta 3D del proceso y la distribución, con recorrido guiado. Diseñado y desarrollado por Lukbyte.">
+<meta name="twitter:image" content="https://planta-pupiales-3d.vercel.app/assets/og.jpg?v=1">
+<meta name="theme-color" content="#0b6d8e">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<script>window.TAMANOS = {};</script>
+</head>
+<body>
+<title>Planta de lácteos Pupiales</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Portada: Equinox presenta (logo, presentación, contacto) y Lukbyte firma el diseño y el desarrollo */
+:root {
+  --bg: #f2f4f6;
+  --surface: #ffffff;
+  --ink: #121a2b;
+  --muted: #566173;
+  --line: #d8dee6;
+  --navy: #1a2670;      /* azul de Equinox */
+  --navy-ink: #ffffff;
+  --steel: #e6ebf0;
+  --placa: #ffffff;     /* fondo del logo de Equinox en los dos temas */
+  --lk-bg: #070c1a;     /* banda de Lukbyte: oscura en los dos temas */
+  --lk-ink: #e8f3ff;
+  --lk-muted: #9fb2cc;
+  --lk-cyan: #38d4ff;
+  --lk-violet: #9b6bff;
+  --f-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --f-body: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1118; --surface: #131a23; --ink: #e5eaf1; --muted: #95a1b3; --line: #253041;
+    --navy: #3a4fc4; --navy-ink: #ffffff; --steel: #18212c; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1118; --surface: #131a23; --ink: #e5eaf1; --muted: #95a1b3; --line: #253041;
+  --navy: #3a4fc4; --navy-ink: #ffffff; --steel: #18212c; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.55; }
+a { color: inherit; }
+img { max-width: 100%; }
+.envoltura { max-width: 1160px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
+
+/* Encabezado */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.cab { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: var(--surface); border-bottom: 1px solid var(--line); }
+.cab .envoltura { display: flex; align-items: center; gap: 18px; padding-block: 10px; }
+.placa { display: inline-flex; align-items: center; background: var(--placa); border-radius: 8px; padding: 6px 10px; border: 1px solid var(--line); }
+.placa img { display: block; height: 38px; width: auto; }
+.cab nav { display: flex; gap: 18px; margin-left: auto; font-weight: 500; font-size: 15px; }
+.cab nav a { text-decoration: none; color: var(--muted); }
+.cab nav a:hover { color: var(--ink); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; border-radius: 8px; border: 1px solid transparent; font-family: var(--f-display); font-weight: 700; font-size: 17px; letter-spacing: 0.02em; text-decoration: none; cursor: pointer; line-height: 1.1; }
+.btn-1 { background: var(--navy); color: var(--navy-ink); }
+.btn-1:hover { filter: brightness(1.12); }
+.btn-2 { background: var(--surface); color: var(--ink); border-color: var(--line); }
+.btn-2:hover { border-color: var(--navy); }
+.cab .btn { padding: 8px 14px; font-size: 15px; }
+@media (max-width: 760px) { .cab nav { display: none; } .cab .btn { margin-left: auto; } }
+
+/* Portada */
+.hero { padding-block: 56px 40px; }
+.hero .envoltura { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 40px; align-items: center; }
+.ceja { font-family: var(--f-display); font-weight: 600; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy); }
+h1 { margin: 10px 0 14px; font-family: var(--f-display); font-weight: 700; font-size: clamp(40px, 6vw, 64px); line-height: 0.98; letter-spacing: -0.005em; text-wrap: balance; }
+.hero p.lead { margin: 0 0 22px; font-size: 18px; color: var(--muted); max-width: 46ch; }
+.acciones { display: flex; flex-wrap: wrap; gap: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.chip { font-size: 13px; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); }
+.chip b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.hero { position: relative; overflow: clip; }
+.hero::before { content: ""; position: absolute; z-index: 0; pointer-events: none; width: 900px; height: 700px; right: -220px; top: -140px;
+  background: radial-gradient(closest-side, rgba(56, 212, 255, 0.22), rgba(58, 79, 196, 0.16) 55%, transparent); }
+.hero .envoltura { position: relative; z-index: 1; }
+/* Escena: el modelo 3D en movimiento, con un aro de color (cian → azul Equinox → violeta) y una leve perspectiva */
+.escena { margin: 0; position: relative; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; border: 2px solid transparent;
+  background: linear-gradient(#dfe5e8, #dfe5e8) padding-box, linear-gradient(135deg, #38d4ff, var(--navy) 50%, #9b6bff) border-box;
+  box-shadow: 0 34px 70px -24px rgba(12, 24, 70, 0.55), 0 0 60px -10px rgba(56, 212, 255, 0.28);
+  transform: perspective(1600px) rotateY(-7deg) rotateX(2deg); transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.escena:hover { transform: perspective(1600px) rotateY(0deg) rotateX(0deg); }
+.escena video, .escena img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.vidrio { background: rgba(10, 16, 32, 0.72); color: #eef4ff; -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.14); }
+.vivo { position: absolute; left: 14px; top: 14px; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px 6px 10px; border-radius: 999px;
+  font-family: var(--f-display); font-weight: 600; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; }
+.vivo i { width: 9px; height: 9px; border-radius: 50%; background: #38d4ff; box-shadow: 0 0 0 0 rgba(56, 212, 255, 0.7); animation: latido 1.8s ease-out infinite; }
+@keyframes latido { 0% { box-shadow: 0 0 0 0 rgba(56, 212, 255, 0.7); } 80%, 100% { box-shadow: 0 0 0 9px rgba(56, 212, 255, 0); } }
+.leyenda { position: absolute; left: 14px; bottom: 14px; max-width: calc(100% - 76px); display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 7px 12px; border-radius: 10px; font-size: 12.5px; }
+.leyenda span { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.leyenda i { width: 14px; height: 4px; border-radius: 2px; background: var(--c); }
+.pausa { position: absolute; right: 14px; bottom: 14px; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; cursor: pointer; padding: 0; }
+.pausa svg { width: 16px; height: 16px; fill: currentColor; }
+.pausa:hover { background: rgba(10, 16, 32, 0.9); }
+@media (prefers-reduced-motion: reduce) { .escena { transition: none; } .vivo i { animation: none; } }
+@media (max-width: 900px) {
+  .hero .envoltura { grid-template-columns: minmax(0, 1fr); } .hero { padding-block: 32px 24px; }
+  .escena, .escena:hover { transform: none; }
+  .hero::before { width: 520px; height: 520px; right: -200px; top: auto; bottom: -120px; }
+}
+@media (max-width: 520px) { .leyenda { font-size: 11.5px; gap: 3px 9px; padding: 6px 9px; } .leyenda span:nth-child(n+4) { display: none; } .vivo { font-size: 12.5px; } }
+
+/* Secciones */
+section.bloque { padding-block: 48px; scroll-margin-top: 64px; }
+.titulo { display: flex; flex-direction: column; gap: 6px; margin-bottom: 24px; }
+h2 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: clamp(30px, 4vw, 40px); line-height: 1.02; text-wrap: balance; }
+.titulo p { margin: 0; color: var(--muted); max-width: 62ch; }
+.tarjetas { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.tarjeta { display: flex; flex-direction: column; gap: 8px; padding: 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); text-decoration: none; }
+.tarjeta:hover { border-color: var(--navy); }
+.tarjeta svg { width: 26px; height: 26px; stroke: var(--navy); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.tarjeta h3 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: 22px; }
+.tarjeta p { margin: 0; color: var(--muted); font-size: 15px; flex: 1; }
+.tarjeta .ir { font-family: var(--f-display); font-weight: 700; font-size: 15px; color: var(--navy); letter-spacing: 0.02em; }
+
+.proceso { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 32px; align-items: start; }
+ol.etapas { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; counter-reset: etapa; }
+ol.etapas li { counter-increment: etapa; display: grid; grid-template-columns: 34px 6px minmax(0, 1fr); gap: 12px; align-items: start; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+ol.etapas li::before { content: counter(etapa); font-family: var(--f-mono); font-weight: 500; font-size: 14px; color: var(--muted); padding-top: 2px; }
+ol.etapas .barra { width: 6px; align-self: stretch; border-radius: 3px; }
+ol.etapas h3 { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: 19px; line-height: 1.1; }
+ol.etapas p { margin: 2px 0 0; color: var(--muted); font-size: 14.5px; }
+.detalles { display: flex; flex-direction: column; gap: 14px; }
+.detalles figure { margin: 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: var(--steel); }
+.detalles img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+.detalles figcaption { padding: 8px 12px; font-size: 13px; color: var(--muted); background: var(--surface); }
+.fuentes { margin-top: 20px; padding: 14px 16px; border-left: 3px solid var(--navy); background: var(--surface); border-radius: 0 8px 8px 0; font-size: 14px; color: var(--muted); }
+@media (max-width: 900px) { .proceso { grid-template-columns: minmax(0, 1fr); } }
+
+/* Equinox */
+.equinox { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 32px; align-items: center; padding: 32px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); }
+.equinox .placa { padding: 18px 22px; justify-self: start; }
+.equinox .placa img { height: 84px; }
+.equinox p { margin: 8px 0 0; color: var(--muted); }
+.contacto { list-style: none; margin: 16px 0 18px; padding: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 14px; font-size: 15px; }
+.contacto dt { color: var(--muted); }
+.contacto dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+.contacto a { text-decoration: none; }
+.contacto a:hover { text-decoration: underline; }
+@media (max-width: 760px) { .equinox { grid-template-columns: minmax(0, 1fr); padding: 22px; } }
+
+/* Lukbyte */
+.lukbyte { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 28px; align-items: center; padding: 28px 32px; border-radius: 14px; background: radial-gradient(120% 140% at 0% 0%, #10204a 0%, var(--lk-bg) 55%); color: var(--lk-ink); border: 1px solid #1d2a4d; }
+.lukbyte img { width: 170px; max-width: 100%; height: auto; display: block; filter: drop-shadow(0 0 18px rgba(56, 212, 255, 0.25)); }
+.lukbyte .ceja { color: var(--lk-cyan); }
+.lukbyte h2 { color: var(--lk-ink); }
+.lukbyte h2 span { color: var(--lk-cyan); }
+.lukbyte p { margin: 8px 0 16px; color: var(--lk-muted); max-width: 60ch; }
+.lukbyte .btn-1 { background: linear-gradient(90deg, #1fb6ff, var(--lk-violet)); color: #ffffff; }
+.lukbyte .btn-2 { background: transparent; color: var(--lk-ink); border-color: #33426b; }
+.lukbyte .btn-2:hover { border-color: var(--lk-cyan); }
+@media (max-width: 640px) { .lukbyte { grid-template-columns: minmax(0, 1fr); padding: 22px; } .lukbyte img { width: 130px; } }
+
+/* Pie */
+footer { margin-top: 32px; border-top: 1px solid var(--line); background: var(--surface); }
+footer .envoltura { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px; padding-block: 18px; font-size: 13.5px; color: var(--muted); }
+footer .placa img { height: 26px; }
+.pie-eq, .pie-lk { display: flex; align-items: center; gap: 10px; }
+.pie-eq .placa, .pie-lk img { flex: none; }
+.pie-lk { text-decoration: none; }
+.pie-lk img { width: 30px; height: auto; }
+.pie-lk b { color: var(--ink); }
+
+/* Video */
+dialog { padding: 0; border: 0; border-radius: 12px; background: #0d1117; width: min(1000px, calc(100vw - 32px)); max-width: none; }
+dialog::backdrop { background: rgba(5, 10, 20, 0.7); }
+dialog video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+dialog .barra-dlg { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px; color: #c9d4de; font-size: 14px; }
+dialog button { border: 1px solid #33404f; background: transparent; color: #e5eaf1; border-radius: 6px; padding: 5px 12px; cursor: pointer; font: inherit; }
+/* Productos y aviso de maqueta */
+.productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.productos .grupo { padding: 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.productos .grupo.f2 { border-style: dashed; }
+.productos h3 { margin: 0 0 10px; font-family: var(--f-display); font-weight: 700; font-size: 22px; }
+.productos h3 small { display: block; font-family: var(--f-body); font-weight: 400; font-size: 14px; color: var(--muted); }
+.productos ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+.productos li { font-size: 14.5px; padding: 4px 10px; border-radius: 999px; background: var(--steel); }
+.escena .marca { position: absolute; right: 14px; top: 14px; padding: 5px 11px; border-radius: 999px; font-size: 12.5px; }
+</style>
+
+<header class="cab">
+  <div class="envoltura">
+    <a class="placa" href="#inicio" aria-label="Industrias Equinox Colombia, inicio"><img src="assets/logo-equinox.png" alt="Industrias Equinox Colombia" width="114" height="38"></a>
+    <nav aria-label="Secciones">
+      <a href="#proyecto">Proyecto</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#productos">Productos</a>
+      <a href="#equinox">Equinox</a>
+    </nav>
+    <a class="btn btn-1" href="visor">Abrir maqueta 3D</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="envoltura">
+      <div>
+        <div class="ceja">Industrias Equinox Colombia presenta</div>
+        <h1>Planta de lácteos de 500 L/día</h1>
+        <p class="lead">Proyecto de Omar Bravo en Pupiales, Nariño. Una maqueta 3D para ver el proceso y la distribución de la planta: de la leche que llega en cantinas a la leche en bolsa, los yogures y el kumis, y una segunda fase con quesos, arequipe, crema y mantequilla.</p>
+        <div class="acciones">
+          <a class="btn btn-1" href="visor">Abrir maqueta 3D</a>
+          <a class="btn btn-2" href="visor#recorrido">▶ Recorrido guiado</a>
+          <button type="button" class="btn btn-2" id="b-video" hidden>▶ Ver el video</button>
+        </div>
+        <div class="chips">
+          <span class="chip">Pupiales, Nariño</span>
+          <span class="chip"><b>500</b> L/día</span>
+          <span class="chip"><b id="c-equipos">30</b> equipos</span>
+          <span class="chip"><b>13</b> productos</span>
+          <span class="chip"><b>2</b> fases</span>
+        </div>
+      </div>
+      <figure class="escena">
+        <img src="assets/portada.jpg" alt="Maqueta 3D de la planta de lácteos: recibo, proceso, empaque, cuarto frío y la sala de quesos de la fase 2, con las líneas de leche, yogurt y vapor" width="2000" height="1125">
+        <span class="vivo vidrio"><i aria-hidden="true"></i>Maqueta 3D</span>
+        <span class="marca vidrio">Conceptual · no es un plano</span>
+        <figcaption class="leyenda vidrio">
+          <span><i style="--c:#2f7fc4"></i>Leche</span>
+          <span><i style="--c:#c23d7d"></i>Yogurt y kumis</span>
+          <span><i style="--c:#d32f2f"></i>Vapor</span>
+          <span><i style="--c:#00838f"></i>Agua helada</span>
+          <span><i style="--c:#8e6bd1"></i>CIP</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="bloque" id="proyecto">
+    <div class="envoltura">
+      <div class="titulo">
+        <div class="ceja">El proyecto</div>
+        <h2>Toda la planta, en una sola página</h2>
+        <p>Se abre en el navegador del celular o del computador, sin instalar nada. Toca cualquier equipo, zona o producto para ver qué es y por dónde pasa.</p>
+      </div>
+      <div class="tarjetas">
+        <a class="tarjeta" href="visor">
+          <svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 22V12M21 7l-9 5-9-5"/></svg>
+          <h3>Maqueta en 3D</h3>
+          <p>La nave con sus zonas, los equipos y las líneas de proceso con el producto en movimiento. Gira, acerca y toca lo que quieras ver.</p>
+          <span class="ir">Abrir el 3D →</span>
+        </a>
+        <a class="tarjeta" href="visor#plano">
+          <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3z"/><path d="M3 9h8v12M11 9h10M15 9v5h6"/></svg>
+          <h3>Distribución vista desde arriba</h3>
+          <p>Las zonas con su área aproximada, los equipos y el flujo de la leche. Es una distribución conceptual, no un plano.</p>
+          <span class="ir">Ver la distribución →</span>
+        </a>
+        <a class="tarjeta" href="visor#recorrido">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></svg>
+          <h3>Recorrido guiado</h3>
+          <p>Del recibo de la leche al despacho, los servicios, la fase 2 y el espacio para crecer, con la distribución a la vista en una esquina.</p>
+          <span class="ir">Empezar el recorrido →</span>
+        </a>
+        <a class="tarjeta" href="visor#caminar">
+          <svg viewBox="0 0 24 24"><circle cx="13" cy="4" r="2"/><path d="M10 22l2-7 3 3v4M8 12l2-4 4 1 3 3M12 15l-2-3"/></svg>
+          <h3>Camina por la planta</h3>
+          <p>Entra como el personal: vestier, lavabotas y proceso. Recorre cada zona en primera persona.</p>
+          <span class="ir">Caminar →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="proceso">
+    <div class="envoltura">
+      <div class="titulo">
+        <div class="ceja">El proceso</div>
+        <h2>De la cantina al despacho</h2>
+        <p>Cada etapa tiene su color, igual que las líneas de proceso de la maqueta.</p>
+      </div>
+      <div class="proceso">
+        <ol class="etapas" id="etapas"></ol>
+        <div class="detalles">
+          <figure><img src="assets/detalle-proceso.jpg" alt="Sala de proceso con pasteurizador de placas, homogenizador, tanque de leche pasteurizada, tanque de fermentación y tanque de mezcla" width="1200" height="800" loading="lazy"><figcaption>Proceso de leche y fermentados</figcaption></figure>
+          <figure><img src="assets/detalle-fase2.jpg" alt="Sala de quesos y derivados de la fase 2 con tina de cuajado, mesa de moldeo, prensa, hiladora, marmita y mantequillera" width="1200" height="800" loading="lazy"><figcaption>Fase 2: quesos, arequipe, crema y mantequilla</figcaption></figure>
+        </div>
+      </div>
+      <div class="fuentes">Maqueta conceptual armada con la solicitud del proyecto: planta de unos 500 L/día con recepción y enfriamiento, pasteurización, homogenización, tanques de proceso y almacenamiento, CIP, vapor, empaque y cuarto frío. Todavía no hay lote ni planos: la nave, las medidas y las capacidades son orientativas y se ajustan en la cotización.</div>
+    </div>
+  </section>
+
+  <section class="bloque" id="productos">
+    <div class="envoltura">
+      <div class="titulo">
+        <div class="ceja">Productos</div>
+        <h2>13 productos en dos fases</h2>
+        <p>La planta arranca con la leche y los fermentados y queda lista para sumar la sala de quesos y derivados. En la maqueta, cada producto muestra los equipos por los que pasa.</p>
+      </div>
+      <div class="productos">
+        <div class="grupo">
+          <h3>Fase 1<small>Leche y fermentados</small></h3>
+          <ul><li>Leche líquida en bolsa</li><li>Yogurt saborizado en bolsa</li><li>Yogurt saborizado en vaso</li><li>Yogurt griego</li><li>Yogurt griego con sabor</li><li>Kumis</li></ul>
+        </div>
+        <div class="grupo f2">
+          <h3>Fase 2<small>Quesos y derivados</small></h3>
+          <ul><li>Queso campesino</li><li>Queso doble crema (bloque y tajado)</li><li>Queso mozzarella (bloque y tajado)</li><li>Arequipe</li><li>Cuajada</li><li>Crema de leche</li><li>Mantequilla</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="equinox">
+    <div class="envoltura">
+      <div class="equinox">
+        <span class="placa"><img src="assets/logo-equinox.png" alt="Industrias Equinox Colombia" width="252" height="84" loading="lazy"></span>
+        <div>
+          <div class="ceja">Quién presenta el proyecto</div>
+          <h2>Industrias Equinox Colombia</h2>
+          <p>Fabrica en Copacabana, Antioquia, equipos en acero inoxidable para la industria láctea: los diseña, los fabrica y los instala. Ha instalado equipos en Antioquia, la Costa, Caquetá, Magdalena Medio, Valle, Nariño (Pasto) y Huila.</p>
+          <dl class="contacto">
+            <dt>WhatsApp de ventas</dt><dd><a href="https://wa.me/573107250200" target="_blank" rel="noopener">+57 310 725 0200</a></dd>
+            <dt>Correo</dt><dd><a href="mailto:ventas@indequinoxcol.com">ventas@indequinoxcol.com</a></dd>
+            <dt>Sitio</dt><dd><a href="https://indequinoxcol.com" target="_blank" rel="noopener">indequinoxcol.com</a></dd>
+          </dl>
+          <a class="btn btn-1" href="https://wa.me/573107250200?text=Hola%2C%20vi%20la%20maqueta%203D%20de%20la%20planta%20de%20l%C3%A1cteos%20de%20Pupiales%20y%20quiero%20avanzar%20con%20la%20cotizaci%C3%B3n." target="_blank" rel="noopener">Hablar con Equinox por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloque" id="lukbyte">
+    <div class="envoltura">
+      <div class="lukbyte">
+        <img src="assets/logo-lukbyte.png" alt="Lukbyte, soluciones digitales" width="170" height="178" loading="lazy">
+        <div>
+          <div class="ceja">Diseño y desarrollo</div>
+          <h2>Diseñado y desarrollado por <span>Lukbyte</span></h2>
+          <p>Lukbyte creó la maqueta 3D, la distribución, el recorrido y este sitio. Hacemos software a medida que crece con tu empresa, desde Medellín.</p>
+          <div class="acciones">
+            <a class="btn btn-1" href="https://lukbyte-my-website.vercel.app/" target="_blank" rel="noopener">Conoce Lukbyte</a>
+            <a class="btn btn-2" href="https://wa.me/573150399322?text=Hola%20Lukbyte%2C%20vi%20la%20maqueta%203D%20de%20la%20planta%20de%20l%C3%A1cteos%20de%20Pupiales%20y%20quiero%20un%20proyecto%20as%C3%AD." target="_blank" rel="noopener">Quiero un proyecto así</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="envoltura">
+    <div class="pie-eq"><span class="placa"><img src="assets/logo-equinox.png" alt="Industrias Equinox Colombia" width="78" height="26" loading="lazy"></span><span>Industrias Equinox Colombia presenta · Proyecto planta de lácteos, Pupiales (Nariño) · Maqueta conceptual del 19 de noviembre de 2026</span></div>
+    <a class="pie-lk" href="https://lukbyte-my-website.vercel.app/" target="_blank" rel="noopener"><img src="assets/logo-lukbyte-mini.png" alt="" width="30" height="31" loading="lazy"><span>Diseñado y desarrollado por <b>Lukbyte</b></span></a>
+  </div>
+</footer>
+
+<dialog id="dlg-video" aria-label="Video del recorrido">
+  <video id="video" controls playsinline preload="none"></video>
+  <div class="barra-dlg"><span>Recorrido por la planta</span><button type="button" id="cerrar-video">Cerrar</button></div>
+</dialog>
+
+<script>
+const ETAPAS = [
+  ['Recibo de leche', 'La leche llega en cantinas a la plataforma; el volcador y el tanque recibidor con filtro la reciben y la bomba la lleva al tanque.', '#2f7fc4'],
+  ['Control de calidad', 'El laboratorio, al lado del recibo, revisa cada entrega y el producto terminado.', '#e9a9bc'],
+  ['Enfriamiento', 'Tanque de enfriamiento de 500 L, con espacio marcado para un segundo tanque.', '#7fd6e6'],
+  ['Pasteurización y homogenización', 'Pasteurizador de placas de 250 L/h y homogenizador.', '#2f7fc4'],
+  ['Leche en bolsa', 'Tanque de leche pasteurizada de 500 L y empacadora de bolsa.', '#2f7fc4'],
+  ['Yogurt y kumis', 'Tanque de fermentación de 500 L y tanque de mezcla de 300 L; sale en bolsa o en vaso.', '#c23d7d'],
+  ['Yogurt griego', 'Mesa de desuerado para el yogurt griego, natural o con sabor.', '#e48bb5'],
+  ['Empaque, frío y despacho', 'Mesa de empaque, canastillas, cuarto frío y andén de despacho.', '#5f9a3a'],
+  ['Servicios', 'Generador de vapor, banco de agua helada y sistema CIP para lavar tanques y tuberías.', '#d32f2f'],
+  ['Fase 2', 'Quesos, arequipe, crema y mantequilla en su propia sala, junto al proceso y al empaque.', '#d4851a'],
+];
+document.getElementById('etapas').innerHTML = ETAPAS.map(([t, d, c]) => `<li><span class="barra" style="background:${c}"></span><div><h3>${t}</h3><p>${d}</p></div></li>`).join('');
+
+// El video del recorrido aparece cuando el archivo está en documentos/video
+const VIDEO = 'documentos/video/planta-pupiales-recorrido.mp4';
+const dlg = document.getElementById('dlg-video'), video = document.getElementById('video'), bVideo = document.getElementById('b-video');
+if (window.TAMANOS && window.TAMANOS[VIDEO]) bVideo.hidden = false;
+bVideo.addEventListener('click', () => {
+  if (!video.src) video.src = VIDEO;
+  dlg.showModal();
+  video.play().catch(() => {});
+});
+const cerrar = () => { video.pause(); dlg.close(); };
+document.getElementById('cerrar-video').addEventListener('click', cerrar);
+dlg.addEventListener('click', (ev) => { if (ev.target === dlg) cerrar(); });
+dlg.addEventListener('close', () => video.pause());
+</script>
+
+</body>
+</html>
