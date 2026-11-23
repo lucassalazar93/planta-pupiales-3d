@@ -1,6 +1,6 @@
 # Maqueta 3D · Planta de lácteos de Pupiales
 
-Maqueta 3D conceptual de una planta de lácteos de unos 500 L/día en Pupiales (Nariño), proyecto de Omar Bravo. Sirve para mostrar el proceso y la distribución: del recibo de la leche en cantinas a la leche en bolsa, los yogures y el kumis, más una segunda fase con quesos, arequipe, crema y mantequilla.
+Maqueta 3D conceptual de una planta de lácteos de 5.000 L/día en Pupiales (Nariño), proyecto de Omar Bravo. Sirve para mostrar el proceso y la distribución: del recibo de la leche en cantinas a la leche en bolsa, los yogures y el kumis, más una segunda fase con quesos, arequipe, crema y mantequilla.
 
 **Industrias Equinox Colombia presenta** · diseñado y desarrollado por **[Lukbyte · Soluciones digitales](https://lukbyte-my-website.vercel.app/)**.
 
@@ -22,7 +22,7 @@ Si Vercel le pone otro nombre al proyecto, cambiar `SITIO` en `herramientas/docu
 
 | Parte | Qué hace |
 | --- | --- |
-| **Vista 3D** | La nave con 11 zonas, 30 equipos (más un espacio reservado para un segundo tanque) y 13 líneas con el producto en movimiento. Los muros que tapan la vista se bajan solos. |
+| **Vista 3D** | La nave con 11 zonas, 31 equipos (más un espacio reservado para un segundo tanque) y 13 líneas con el producto en movimiento. Los muros que tapan la vista se bajan solos. |
 | **Distribución 2D** | Vista desde arriba con las zonas coloreadas por uso y su área aproximada, los equipos y las líneas. Sin cotas ni escala: no es un plano. |
 | **Productos** | Los 13 productos de la solicitud. Al tocar uno se resaltan los equipos por los que pasa (ruta orientativa). |
 | **Zonas** | Recibo y enfriamiento, laboratorio, bodega de insumos, servicios, oficina, vestier y baños, proceso de leche y fermentados, empaque, cuarto frío, despacho y la sala de quesos y derivados (fase 2). Afuera: plataforma de recibo, andén de despacho y el área reservada para ampliar. |
@@ -34,14 +34,15 @@ Si Vercel le pone otro nombre al proyecto, cambiar `SITIO` en `herramientas/docu
 
 ### Equipos
 
-- **Línea Equinox (catálogo):** tanque de enfriamiento de 500 L, pasteurizador de placas de 250 L/h, tanque de leche pasteurizada de 500 L, tanque de fermentación de 500 L, tanque de mezcla de 300 L, mesones, carro de canastillas; en la fase 2, tina de cuajado de 300 L, prensa neumática de 1 pistón, hiladora de 50 kg/h, carro con moldes, marmita de 50 L y mantequillera de 50 L. Las capacidades salen de la guía de dimensionamiento de Equinox para 500 L/día (`APLICACIONES[i].linea(500)` del sitio de Equinox).
+- **Línea Equinox (catálogo):** tanque de almacenamiento de 5.000 L para la leche cruda, pasteurizador de placas de 1.250 L/h, tanque de almacenamiento de 5.000 L para la leche pasteurizada, dos tanques de fermentación de 2.500 L, tanque de mezcla de 2.500 L, mesones, carro de canastillas; en la fase 2, tina de cuajado de 2.500 L, prensa neumática de 7 pistones, hiladora de 150 kg/h, carro con 200 moldes, marmita de 300 L y mantequillera de 300 L. Las capacidades salen de la guía de dimensionamiento de Equinox para 5.000 L/día (`APLICACIONES[i].linea(5000)` del sitio de Equinox).
 - **Complementarios (proveedor por definir):** volcador, tanque recibidor con filtro, bombas, unidad condensadora, homogenizador, empacadora de bolsa para leche y semilíquidos, llenadora de vasos, generador de vapor, banco de agua helada, sistema CIP, descremadora, tajadora y empacadora al vacío.
 
 ### Supuestos por confirmar
 
-- Lote o bodega: la nave (22,5 × 14 m, más un anexo de 12,5 × 5,5 m para la fase 2) es una propuesta, con 4 m de altura libre.
-- Cómo se reparten los 500 L/día entre los productos; con eso se ajustan las capacidades.
-- Si la unidad condensadora viene con el tanque de enfriamiento.
+- Lote o bodega: la nave (30 × 18 m, más un anexo de 17 × 8 m para la fase 2) es una propuesta, con 5 m de altura libre.
+- Cómo se reparten los 5.000 L/día entre los productos; con eso se ajustan las capacidades.
+- Cómo llega la leche: en la maqueta llega en cantinas; con 5.000 L/día puede convenir recibir en carrotanque.
+- Si el tanque de leche cruda lleva su propia unidad condensadora o se enfría con el banco de agua helada.
 - Combustible del generador de vapor y capacidad del banco de agua helada.
 - Formatos de bolsa y de vaso, y forma de desuerar el yogurt griego.
 - Capacidad y temperatura del cuarto frío.

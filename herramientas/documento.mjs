@@ -21,7 +21,7 @@ export function tamanos(raiz) {
 // Vista previa al compartir el enlace (WhatsApp, Facebook, Telegram…): imagen de 1200 × 630 con el logo de Equinox al centro,
 // para que se vea aunque la recorten cuadrada. Al cambiar la imagen, subir v= para que WhatsApp no use la guardada.
 const SITIO = 'https://planta-pupiales-3d.vercel.app';
-const OG = `${SITIO}/assets/og.jpg?v=1`;
+const OG = `${SITIO}/assets/og.jpg?v=2`;
 
 export function documento(contenido, raiz) {
   const tam = raiz ? tamanos(raiz) : {};
@@ -31,8 +31,8 @@ export function documento(contenido, raiz) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="Maqueta 3D conceptual de una planta de lácteos de 500 L/día en Pupiales (Nariño): proceso, distribución y recorrido guiado. Presenta Industrias Equinox Colombia.">
-<meta property="og:title" content="Planta de lácteos de 500 L/día · Pupiales · Industrias Equinox Colombia">
+<meta name="description" content="Maqueta 3D conceptual de una planta de lácteos de 5.000 L/día en Pupiales (Nariño): proceso, distribución y recorrido guiado. Presenta Industrias Equinox Colombia.">
+<meta property="og:title" content="Planta de lácteos de 5.000 L/día · Pupiales · Industrias Equinox Colombia">
 <meta property="og:description" content="Maqueta 3D del proceso y la distribución, con recorrido guiado. Diseñado y desarrollado por Lukbyte.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Industrias Equinox Colombia">
@@ -45,7 +45,7 @@ export function documento(contenido, raiz) {
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Logo de Industrias Equinox Colombia sobre la maqueta 3D de la planta de lácteos de Pupiales">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Planta de lácteos de 500 L/día · Pupiales · Industrias Equinox Colombia">
+<meta name="twitter:title" content="Planta de lácteos de 5.000 L/día · Pupiales · Industrias Equinox Colombia">
 <meta name="twitter:description" content="Maqueta 3D del proceso y la distribución, con recorrido guiado. Diseñado y desarrollado por Lukbyte.">
 <meta name="twitter:image" content="${OG}">
 <meta name="theme-color" content="#0b6d8e">
