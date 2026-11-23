@@ -22,30 +22,34 @@ Si Vercel le pone otro nombre al proyecto, cambiar `SITIO` en `herramientas/docu
 
 | Parte | Qué hace |
 | --- | --- |
-| **Vista 3D** | La nave con 11 zonas, 31 equipos (más un espacio reservado para un segundo tanque) y 13 líneas con el producto en movimiento. Los muros que tapan la vista se bajan solos. |
+| **Vista 3D** | La nave con 12 zonas, 38 equipos (más espacios reservados para un segundo tanque, una segunda empacadora y el tratamiento de aguas) y 17 líneas con el producto en movimiento. Los muros que tapan la vista se bajan solos. |
 | **Distribución 2D** | Vista desde arriba con las zonas coloreadas por uso y su área aproximada, los equipos y las líneas. Sin cotas ni escala: no es un plano. |
 | **Productos** | Los 13 productos de la solicitud. Al tocar uno se resaltan los equipos por los que pasa (ruta orientativa). |
-| **Zonas** | Recibo y enfriamiento, laboratorio, bodega de insumos, servicios, oficina, vestier y baños, proceso de leche y fermentados, empaque, cuarto frío, despacho y la sala de quesos y derivados (fase 2). Afuera: plataforma de recibo, andén de despacho y el área reservada para ampliar. |
+| **Zonas** | Recibo y enfriamiento, laboratorio, bodega de insumos, servicios, oficina, cuarto técnico, vestier y baños, proceso de leche y fermentados, empaque, cuarto frío, despacho y la sala de quesos y derivados (fase 2). Afuera: plataforma de recibo, andén de despacho, el área reservada para ampliar y la reserva para el tratamiento de aguas. |
 | **Fase 2** | La sala de quesos y derivados va en otro tono y se puede ocultar con «Fase 2». |
 | **Color por origen** | Pinta cada equipo según sea de la línea Equinox (catálogo), complementario (proveedor por definir) o reserva para ampliar. |
-| **Recorridos** | «Proceso completo» (14 paradas, 1:53) y uno por zona. La vista que no es la principal aparece en un recuadro. |
+| **Recorridos** | «Proceso completo» (14 paradas, 1:55) y uno por zona. La vista que no es la principal aparece en un recuadro. |
 | **Caminar** | Recorrido a pie en primera persona desde la entrada del personal: vestier, lavabotas y proceso. Choca con muros, equipos y muebles. Esc para salir. |
 | **Camión y operario** | El camión de leche junto a la plataforma; un operario entra cada cantina, la vacía en el volcador y regresa. Ilustrativo. |
 
 ### Equipos
 
 - **Línea Equinox (catálogo):** tanque de almacenamiento de 5.000 L para la leche cruda, pasteurizador de placas de 1.250 L/h, tanque de almacenamiento de 5.000 L para la leche pasteurizada, dos tanques de fermentación de 2.500 L, tanque de mezcla de 2.500 L, mesones, carro de canastillas; en la fase 2, tina de cuajado de 2.500 L, prensa neumática de 7 pistones, hiladora de 150 kg/h, carro con 200 moldes, marmita de 300 L y mantequillera de 300 L. Las capacidades salen de la guía de dimensionamiento de Equinox para 5.000 L/día (`APLICACIONES[i].linea(5000)` del sitio de Equinox).
-- **Complementarios (proveedor por definir):** volcador, tanque recibidor con filtro, bombas, unidad condensadora, homogenizador, empacadora de bolsa para leche y semilíquidos, llenadora de vasos, generador de vapor, banco de agua helada, sistema CIP, descremadora, tajadora y empacadora al vacío.
+- **Complementarios (proveedor por definir):** volcador, tanque recibidor con filtro, bombas, medidor de caudal, enfriador de placas, lavado de cantinas, unidad condensadora, homogenizador, empacadora de bolsa para leche y semilíquidos, llenadora de vasos, generador de vapor, banco de agua helada, sistema CIP, compresor de aire, evaporador y unidad del cuarto frío, descremadora, tajadora, empacadora al vacío y tanque de suero.
 
 ### Supuestos por confirmar
 
-- Lote o bodega: la nave (30 × 18 m, más un anexo de 17 × 8 m para la fase 2) es una propuesta, con 5 m de altura libre.
+- Lote o bodega: la nave (34 × 18 m, más un anexo de 17 × 8 m para la fase 2) es una propuesta, con 5 m de altura libre.
+- Cada línea está calculada como si los 5.000 L fueran a ese producto, así que en conjunto la planta queda sobredimensionada hasta conocer el reparto.
 - Cómo se reparten los 5.000 L/día entre los productos; con eso se ajustan las capacidades.
 - Cómo llega la leche: en la maqueta llega en cantinas; con 5.000 L/día puede convenir recibir en carrotanque.
 - Si el tanque de leche cruda lleva su propia unidad condensadora o se enfría con el banco de agua helada.
 - Combustible del generador de vapor y capacidad del banco de agua helada.
 - Formatos de bolsa y de vaso, y forma de desuerar el yogurt griego.
-- Capacidad y temperatura del cuarto frío.
+- Capacidad y temperatura del cuarto frío (en la maqueta, unos 76 m²).
+- Velocidad del empaque: si hace falta la segunda empacadora.
+- Capacidad del enfriador de placas, del generador de vapor, del banco de agua helada, del CIP y del compresor de aire.
+- Destino del suero y tipo de tratamiento de aguas (con el ingeniero ambiental).
 
 ---
 

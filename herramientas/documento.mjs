@@ -21,7 +21,7 @@ export function tamanos(raiz) {
 // Vista previa al compartir el enlace (WhatsApp, Facebook, Telegram…): imagen de 1200 × 630 con el logo de Equinox al centro,
 // para que se vea aunque la recorten cuadrada. Al cambiar la imagen, subir v= para que WhatsApp no use la guardada.
 const SITIO = 'https://planta-pupiales-3d.vercel.app';
-const OG = `${SITIO}/assets/og.jpg?v=2`;
+const OG = `${SITIO}/assets/og.jpg?v=3`;
 
 export function documento(contenido, raiz) {
   const tam = raiz ? tamanos(raiz) : {};

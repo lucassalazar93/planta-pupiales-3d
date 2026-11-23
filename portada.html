@@ -206,7 +206,7 @@ dialog button { border: 1px solid #33404f; background: transparent; color: #e5ea
         <div class="chips">
           <span class="chip">Pupiales, Nariño</span>
           <span class="chip"><b>5.000</b> L/día</span>
-          <span class="chip"><b id="c-equipos">31</b> equipos</span>
+          <span class="chip"><b id="c-equipos">38</b> equipos</span>
           <span class="chip"><b>13</b> productos</span>
           <span class="chip"><b>2</b> fases</span>
         </div>
@@ -276,7 +276,7 @@ dialog button { border: 1px solid #33404f; background: transparent; color: #e5ea
           <figure><img src="assets/detalle-fase2.jpg" alt="Sala de quesos y derivados de la fase 2 con tina de cuajado, mesa de moldeo, prensa, hiladora, marmita y mantequillera" width="1200" height="800" loading="lazy"><figcaption>Fase 2: quesos, arequipe, crema y mantequilla</figcaption></figure>
         </div>
       </div>
-      <div class="fuentes">Maqueta conceptual armada con la solicitud del proyecto: planta de 5.000 L/día con recepción y enfriamiento, pasteurización, homogenización, tanques de proceso y almacenamiento, CIP, vapor, empaque y cuarto frío. Todavía no hay lote ni planos: la nave, las medidas y las capacidades son orientativas y se ajustan en la cotización.</div>
+      <div class="fuentes">Maqueta conceptual armada con la solicitud del proyecto: planta de 5.000 L/día con recepción y enfriamiento, pasteurización, homogenización, tanques de proceso y almacenamiento, CIP, vapor, empaque y cuarto frío. Todavía no hay lote ni planos: la nave, las medidas y las capacidades son orientativas. Cada línea se calculó como si los 5.000 L fueran a ese producto; con el reparto real de la leche se ajustan en la cotización.</div>
     </div>
   </section>
 
@@ -351,16 +351,16 @@ dialog button { border: 1px solid #33404f; background: transparent; color: #e5ea
 
 <script>
 const ETAPAS = [
-  ['Recibo de leche', 'La leche llega en cantinas a la plataforma; el volcador y el tanque recibidor con filtro la reciben y la bomba la lleva al tanque de leche cruda.', '#2f7fc4'],
+  ['Recibo de leche', 'La leche llega en cantinas a la plataforma; el volcador y el tanque recibidor con filtro la reciben y la bomba la lleva al medidor; las cantinas vacías se lavan antes de volver.', '#2f7fc4'],
   ['Control de calidad', 'El laboratorio, al lado del recibo, revisa cada entrega y el producto terminado.', '#e9a9bc'],
-  ['Tanque de leche cruda', 'Tanque de 5.000 L con agitador, con espacio marcado para un segundo tanque.', '#7fd6e6'],
+  ['Enfriamiento', 'Enfriador de placas con agua helada y tanque de leche cruda de 5.000 L, con espacio marcado para un segundo tanque.', '#7fd6e6'],
   ['Pasteurización y homogenización', 'Pasteurizador de placas de 1.250 L/h y homogenizador.', '#2f7fc4'],
   ['Leche en bolsa', 'Tanque de leche pasteurizada de 5.000 L y empacadora de bolsa.', '#2f7fc4'],
   ['Yogurt y kumis', 'Dos tanques de fermentación de 2.500 L y tanque de mezcla de 2.500 L; sale en bolsa o en vaso.', '#c23d7d'],
   ['Yogurt griego', 'Mesa de desuerado para el yogurt griego, natural o con sabor.', '#e48bb5'],
-  ['Empaque, frío y despacho', 'Mesa de empaque, canastillas, cuarto frío y andén de despacho.', '#5f9a3a'],
-  ['Servicios', 'Generador de vapor, banco de agua helada y sistema CIP para lavar tanques y tuberías.', '#d32f2f'],
-  ['Fase 2', 'Tina de 2.500 L, prensa de 7 pistones, hiladora de 150 kg/h, marmita y mantequillera de 300 L, en su propia sala junto al proceso y al empaque.', '#d4851a'],
+  ['Empaque, frío y despacho', 'Mesa de empaque, canastillas, cuarto frío de unos 76 m² y andén de despacho, con espacio para una segunda empacadora.', '#5f9a3a'],
+  ['Servicios', 'Generador de vapor, banco de agua helada, sistema CIP para lavar tanques y tuberías, y compresor de aire.', '#d32f2f'],
+  ['Fase 2', 'Tina de 2.500 L, prensa de 7 pistones, hiladora de 150 kg/h, marmita y mantequillera de 300 L y tanque de suero, en su propia sala junto al proceso y al empaque.', '#d4851a'],
 ];
 document.getElementById('etapas').innerHTML = ETAPAS.map(([t, d, c]) => `<li><span class="barra" style="background:${c}"></span><div><h3>${t}</h3><p>${d}</p></div></li>`).join('');
 
